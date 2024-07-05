@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>css 101</title>
+
+    <!-- INTERNAL CSS  -->
+    <style>
+        /* SYNTAX */
+        /* selector {property: value; p2: value2;} */
+
+        /* body {
+            background-color: black;
+        } */
+
+        /* h1 {
+            color: red;
+        } */
+
+        /* p {
+            background-color: darkmagenta;
+        } */
+
+        /* CLASSES  */
+        .blue {
+            color: blue;
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+        #the-title {
+            text-decoration: underline;
+        }
+
+        /* GROUPED SELECTOR  */
+        /* h1, p, div {
+            color: aqua;
+        } */
+
+        /* NESTED SELECTOR  */
+        strong {}
+        /* giving a class to strong  */
+         .selected {} 
+         /* giving an id to strong  */
+         #selectme {}  
+
+         /* nested selector - this one selects only the strong elements inside the p  */
+         p strong {
+            color: blue;
+         }
+
+         p strong i{
+            color: #ff0000;
+            font-size: 50px;
+         }
+
+         /* DIFFERENT TYPES OF COLORS  */
+         h2 {
+            /* hex  */
+            /* color: #ff0000; */
+
+            /* rgb  */
+            /* color: rgb(200, 100, 125); */
+
+            /* rgba  */
+            color: rgba(200, 100, 125, 0,5);
+
+         }
+
+        /* LINK STATES  */
+         a {
+            color: black;
+         }
+         a:hover {
+            color: blue;
+         }
+        a:active{
+            color: red;
+        }
+        a:visited {
+            color: yellow;
+        }
+
+        /* FONT SIZE  */
+        h3.small {
+            font-size: 30px;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <!-- IN LINE CSS  -->
+    <h1 style="font-size: 10px;">
+        This is H1
+    </h1>
+
+    <h1 style="color: blue; font-size: 20px;">
+        This is another H1
+    </h1>
+
+    <h1>This is header</h1>
+
+    <div>This is a div</div>
+    <p>This is a paragraph</p>
+    <strong>This is bolded text</strong>
+
+    <!-- CLASS SELECTOR  -->
+    <h1 class="blue uppercase">Select me</h1>
+    <div class="blue">Select me too</div>
+    <p>Dont select me</p>
+    <p class="uppercase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde accusantium blanditiis perferendis molestias rerum dolores labore cum, minus quam dolorum culpa et. Asperiores ipsum sit debitis nesciunt harum! Quasi?</p>
+    
+    <!-- ID SELECTOR -->
+    <h1 class="blue uppercase" id="the-title">Select me</h1>
+
+    <!-- Grouped ID selector  -->
+    <h1 class="blue">This is h1</h1>
+    <div>This is a div</div>
+    <p class="blue">This is a paragraph</p>
+
+    <!-- NESTED SELECTOR  -->
+    <div>
+        <p>
+            <strong>Lorem ipsum <i>zaid ahamed </i>dolor sit </strong> amet consectetur adipisicing elit. At, et modi accusantium optio ut necessitatibus id commodi nihil sint debitis incidunt dolor illum quos totam asperiores officia eaque aspernatur facere?
+            <strong>This is bold</strong>
+        </p>
+    </div>
+    
+    <h2>Change my color</h2>
+
+    <!-- LINKS STATES  -->
+    <a href="https://kalob.io/">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dignissimos quia exercitationem eligendi necessitatibus, dicta modi explicabo perspiciatis expedita ab a delectus iusto deserunt fugiat et, minus id alias accusamus?</a>
+
+    <!-- FONT SIZES  -->
+    <h3 class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolor molestias, possimus error ea vel dolore harum obcaecati voluptas nihil! Saepe labore nostrum facere. Vitae ipsam nemo beatae reiciendis voluptatum.</h3>
+
+</body>
+</html>
