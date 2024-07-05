@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            border: 10px solid black;
+            margin: 50px auto;
+            position: relative;
+            background-color: black;
+        }
+
+        .box::before {
+            content: ' ';
+            display: block;
+            border: 10px solid red;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: -30px;
+            left: -30px;
+            z-index: -1;
+        }
+
+        .box::after {
+            content: ' ';
+            display: block;
+            border: 10px solid blue;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+            z-index: 10;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            position: relative;
+        }
+
+        a::before {
+            content: ' ';
+            width: 100%;
+            height: 4px;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        a:hover::before {
+            height: 14px;
+        }
+
+        p::first-letter {
+            font-size: 32px;
+            float: left;
+            margin: 5px;
+        }
+
+        p::first-line {
+            font-weight: bold;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>Before and After</h1>
+    <div class="box"></div>
+    <hr>
+    Lorem ipsum dolor  <a href="#">Give this a border</a>sit amet consectetur, adipisicing elit. Porro nemo, accusamus corporis molestiae optio sint incidunt reiciendis labore doloremque debitis deleniti hic quidem excepturi consequuntur voluptas, suscipit quae saepe ab!
+   
+    <hr>
+    <h1>Targetting the first letter</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maiores expedita velit perferendis! Aliquid inventore ducimus tempora ut, sint eum deleniti. Repellat, dolores! Quasi ea quis nihil doloribus blanditiis illum.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolor eos tenetur necessitatibus, aliquam totam eveniet. Quod laboriosam odio et aliquam. Fugit, pariatur? Animi nemo necessitatibus maiores id officiis ex?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ex beatae perferendis eum necessitatibus? Sint dicta delectus nam amet magni ipsa architecto praesentium, inventore corporis a commodi, dolores nostrum veritatis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sed repudiandae eaque eveniet. Enim quibusdam, consequuntur placeat dolor, aspernatur aliquid consectetur itaque, a sed inventore nemo ut beatae autem deserunt.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet deleniti delectus blanditiis minus nulla optio ipsa eligendi maiores, error magnam quos vel sit aliquid fugit? Labore soluta molestiae quam iusto.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam accusantium fugiat, corporis autem magni blanditiis non repellat eius recusandae aut, obcaecati exercitationem fuga pariatur maxime architecto vitae sed optio nobis!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, quos sapiente corporis facere pariatur beatae ut unde atque, accusamus ratione voluptatibus vitae quia, saepe quibusdam iusto ducimus ab. Enim, tempore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sint placeat beatae saepe nam consequatur recusandae itaque dolorum officiis eveniet veritatis sapiente repudiandae ea dignissimos ipsum, veniam eos obcaecati? Voluptatem!
+    </p>
+</body>
+</html>

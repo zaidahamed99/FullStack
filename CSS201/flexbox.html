@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #container div {
+            /* border: 1px solid red; */
+            /* flex-basis: 20%;
+            flex-shrink: 0;
+            flex-grow: 0; */
+        }
+
+        .navigation {
+            flex-basis: 20%;
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        .content {
+            flex-basis: 80%;
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        .header {
+            flex-basis: 100%;
+            flex-grow: 0;
+            flex-shrink: 0;
+            background-color: #f5f5f5;
+            color: #555;
+            padding: 20px;
+            border-bottom: 2px solid black;
+        }
+     
+    </style>
+</head>
+<body>
+    <!-- <div id="container">
+        <div>Left</div>
+        <div>Right</div>
+        <div>Center</div>
+        <div>Center</div>
+        <div>Center</div>
+        <div>Center</div>
+        <div>Center</div>
+        <div>Center</div>
+        <div>Center</div>
+    </div> -->
+
+    <div id="container">
+        <div class="header">Header!</div>
+       <div class="navigation">Navigation</div>
+       <div class="content">
+        <h1>Hello world</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam corporis in explicabo fugiat blanditiis aut hic. Sed tempora eligendi error optio obcaecati sint rerum animi, qui at tenetur illo. Vel?</p>
+       </div>
+
+    </div>
+
+
+</body>
+</html>
